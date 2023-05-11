@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 815px;
+}
+
+body{
+    background-image: url(./imagens/capa-de-fundo-tanjiro3.jpg);
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+
+}
+
+header{
+    padding: 32px;
+}
+
+header nav li,
+section div p,
+section div button{
+    display: inline;
+    font-size: 14px;
+}
+
+header nav li a{
+    text-decoration: none;
+    margin-right: 16px;
+    color: darkgray;
+}
+
+header nav li a:active{
+    color: rgb(255, 255, 255);
+}
+
+header .containers,
+section .containers,
+section .estrela{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 60px;
+}
+
+.busca{
+    margin-left: 1px;
+    display: inline;
+}
+
+header nav img{
+    height: 24px;
+}
+
+header button{
+    background-color: rgba(169, 169, 169, 0);
+}
+
+.busca{
+    padding: 4px 36px;
+    border: 2px ;
+    border-radius: 8px;
+    background-color: rgba(169, 169, 169, 0.247);
+}
+
+#textbusca{
+    float:left;
+    background-color:transparent;
+    margin-right: 36px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:32px;
+}
+
+button{
+    border: none;
+    margin-top: 3px;
+}
+
+#busca-imagem{
+    height: 24px;
+    background-color: rgba(169, 169, 169, 0);
+    border: none;
+}
+
+.containers{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1,
+h2{
+    color: darkgray;
+    font-size: 10px;
+}
+
+h2{
+    margin-top: 44px;
+    margin-bottom: 16px;
+}
+
+h1{
+    font-size: 44px;
+    color: #fff;
+}
+
+p{
+    font-size: 14px;
+    color: darkgray;
+}
+
+section .desc{
+    margin-top: 90px;
+    margin-bottom: 16px;
+}
+
+section button{
+    padding: 12px 16px;
+    margin-left: 8px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+section button img{
+    width: 16px;
+    margin-right: 4px;
+    align-items: center;
+    background-color: rgb(0,0,0,0);
+    color: rgba(0,0,0,0);
+}
+
+.now{
+    margin-top: 36px;
+    padding: 12px 24px;
+    background-color: goldenrod;
+    border-radius: 8px;
+    color: black;
+}
+
+.avali{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    margin-top: 300px;
+}
+
+.avali-{
+    padding: 0;
+    margin-right: 800px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.nota{
+    margin-right: 16px;
+    margin-top: 250px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.carrossel{
+    margin-left: 800px;
+}
+
+footer{
+    padding: 36px;
+    background-color: rgb(58, 56, 56);
+    text-align: center;
+}
+
+.roda-pe{
+    text-align: center;
+    height: 100px;
+}
