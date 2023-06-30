@@ -1,0 +1,63 @@
+@use 'variaveis';
+
+section{
+    .primeira-secao{
+        margin-top: 10%;
+        width: 100%;
+    }
+    
+    .titulo-desc,
+    .desc-info{
+        color: darkgray;
+    }
+
+    .titulo-desc{
+        h1,h2{
+            color: variaveis.$corBrancaDark;
+            font-size: 3em;
+        }
+
+        h5{
+            font-size: 0.9em;
+        }
+    }
+
+    .desc-info{
+        display: variaveis.$displayF;
+        flex-direction: column;
+        align-items: end;
+        
+        p{
+            font-size: 1.2em;
+        }
+    }
+
+    .info-botao{
+        display: variaveis.$displayF;
+        justify-content: flex-start;
+        width: 73%;
+
+        .now,
+        .now-bk{
+            padding: 12px 16px;
+            margin-right: 6px;
+            border: variaveis.$semBorda;
+            border-radius: 8px;
+        }
+
+        .now{
+            background-color: goldenrod;
+            font-weight: bold;
+        }
+
+        .now-bk{
+            background-color: variaveis.$corTranparente;
+            color: variaveis.$corBrancaDark;
+            font-weight: bold;
+
+            i{
+                font-size: 1.1em;
+            }
+        }
+    }
+}

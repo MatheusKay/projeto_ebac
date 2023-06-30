@@ -1,0 +1,320 @@
+@use 'variaveis.scss';
+@use 'section1.scss';
+@use 'section2.scss';
+
+body{
+    .img-fundo{
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(359.1deg, #000000 50%, rgba(0, 0, 0, 0) 100%), linear-gradient(178.46deg, #000000 3%, rgba(0, 0, 0, 0.473958) 50%, rgba(0, 0, 0, 0) 100%),url(../imagens/capa-de-fundo-tanjiro2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-top: 38px;
+    }
+}
+/*Header do site*/
+
+header{
+    padding: 16px;
+    background-color: variaveis.$corBlack;
+    width: 100%;
+
+    .desktop-nav-lg{
+        display: variaveis.$displayF;
+        align-items: baseline;
+
+        .tablet-nav{
+            display: variaveis.$displayF;
+            width: 100%;
+
+            .col-lg-7{
+                margin-left: 20%;
+            }
+        }
+    }
+
+    .logo{
+        height: 60px;
+    }
+
+    .nav-pills .nav-link.active{
+        background-color: variaveis.$corTranparente;
+        color: variaveis.$corAtiva
+    }
+
+    .nav-pills .nav-link{
+        color: variaveis.$corBrancaDark;
+
+        &:hover{
+            color: variaveis.$corCinzaDark
+        }
+    }
+
+    form{
+        display: variaveis.$displayF;
+        width: 100%;
+
+        .pesquisar{
+            padding: 0;
+            background-color: variaveis.$corCinzaDark;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .form-control{
+            border-radius: 8px 0 0 8px;
+            height: 100%;
+            background-color: variaveis.$corCinzaDark;
+            border: variaveis.$semBorda;
+            color: variaveis.$corBrancaDark;
+
+            &:focus{
+                background-color: variaveis.$corCinzaDark;
+                color: variaveis.$corBrancaDark;
+                outline: 0;
+                border-color: none;
+                box-shadow: none;
+            }
+        }
+
+        button{
+            padding: 4.5px;
+            border: variaveis.$semBorda;
+            border-radius: 0 8px 8px 0;
+            background-color: variaveis.$corCinzaDark;
+            height: 100%;
+            margin: auto 0;
+
+            i{
+                padding: 4px;
+                color: variaveis.$corBrancaDark;
+            }
+        }
+    }
+}
+
+footer{
+    padding: 16px;
+    background-color: variaveis.$corBrancaDark;
+
+    p{
+        text-align: center;
+        color: #000;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile){
+    body .img-fundo{
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(359.1deg, #000000 100%, rgba(0, 0, 0, 0) 100%), linear-gradient(178.46deg, #000000 100%, rgba(0, 0, 0, 0.473958) 100%, rgba(0, 0, 0, 0) 100%),url(../imagens/capa-de-fundo-tanjiro2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    header{
+        background-color: variaveis.$corBlack;
+
+        .desktop-nav-lg{
+            flex-direction: column;
+
+            .pesquisa{
+                width: 100%;
+            }
+
+            .tablet-nav{
+                flex-direction: column;
+
+                .col-lg-7{
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .mobile-site{
+            display: variaveis.$displayF;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+    /*Primeira Seção*/
+    section{  
+        .primeira-secao{
+            margin-top: 20%;
+        }
+
+        .titulo-desc{
+            h1,h2{
+                font-size: 2.5em;
+            }
+        }
+
+        .desc-info{
+            align-items: start;
+
+            p{
+                font-size: 1em;
+                margin-top: 1.2em;
+            }
+        }
+
+        .info-botao{
+            justify-content: flex-start;
+            width: 100%;
+            margin-top: 1em;
+        }
+    }
+    /*Segunda Seção*/
+
+    section{
+        .nota-mobile{
+            .nota-avaliacao{
+                font-size: 2.9em;
+            }
+
+            display: variaveis.$displayF;
+            justify-content: space-between;
+            align-items: end;
+            margin-top: 1em;
+        }
+
+        .mobile-some{
+            display: none;
+        }
+
+        .avaliacoes-espaco-mobile{
+            .num-avaliacao{
+                color: variaveis.$corBrancaDark;
+                font-size: 1.3em;
+            }
+    
+            .avaliacoes{
+                border: variaveis.$semBorda;
+                background-color: variaveis.$corTranparente;
+            }
+    
+            .avaliacoes img{
+                height: 24px;
+            }
+        }
+        /*Carousel*/
+        
+        .carousel-img{
+            .tanjiro1,
+            .nezuko{
+                width: 120%;
+                margin-top: 0;
+                margin-bottom: 4em;
+            }
+
+            .tanjiro2{
+                margin-bottom: 4em;
+                height: 30em;
+            }
+
+            .carousel-item.active{
+                width: 100%;
+            }
+
+            .carousel-indicators{
+                justify-content: center;
+                margin-right: 15%;
+            }
+        }
+
+    }
+
+    footer{
+        p{
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (min-width: variaveis.$mobile) and (max-width: variaveis.$tablet) {
+    /*Header do site*/
+    
+    header{
+        .desktop-nav-lg{
+            display: variaveis.$displayF;
+            flex-direction: column;
+            align-items: center;
+
+            .tablet-nav{
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    padding: 8px 6px;
+                }
+            }
+        }
+
+        form{
+            button{
+                padding: 0.6em;
+            }
+        }
+    }
+
+
+    .tablet-container{
+        flex-direction: column;
+
+        .tablet-nav{
+            display: variaveis.$displayF;
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+
+    .pesquisa{
+        width: 80%;
+
+        .form-control{
+            padding: 0.7em;
+        }
+    }
+    /*Primeira Seção */
+    .img-fundo{
+        background-color: variaveis.$corBlack;
+    }
+
+    section{
+        width: 100%;
+
+        .titulo-desc{
+            h1,h2{
+                font-size: 2em;
+            }
+        }
+
+        .desc-info{
+            padding: 0;
+
+            p{
+                font-size: 1.1em;
+                padding: 0;
+                margin-left: 2em;
+            }
+        }
+
+        .info-botao{
+            width: 91%;
+        }
+    }
+    /*Segunda Seção*/
+
+    section{
+        .carousel-img{
+            .carousel-item.active{
+                width: 100%;
+            }
+
+            .tanjiro2{
+                height: 37.5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@use 'variaveis';
+
+section{
+    .nota-avaliacao{
+        font-size: 3.7em;
+        color: variaveis.$corBrancaDark;
+        text-align: start;
+    }
+
+    .avaliacoes-espaco,
+    .nota-avaliacao{
+        display: variaveis.$displayF;
+        align-items: end;
+        height: 100%;
+    }
+
+    .nota-mobile{
+        display: none;
+    }
+
+    .avaliacoes-espaco{
+        .num-avaliacao{
+            color: variaveis.$corBrancaDark;
+            font-size: 1.3em;
+        }
+
+        .avaliacoes{
+            border: variaveis.$semBorda;
+            background-color: variaveis.$corTranparente;
+        }
+
+        .avaliacoes img{
+            height: 24px;
+        }
+    }
+
+    .carousel-img{
+        height: 650px;
+
+        .tanjiro1,
+        .nezuko{
+            height: 480px;
+            margin-top: 120px;
+        }
+
+        .tanjiro2{
+            height: 600px;
+        }
+
+        .carousel-item.active{
+            display: variaveis.$displayF;
+            justify-content: center;
+            width: 50%;
+        }
+
+        .carousel-indicators{
+            justify-content: end;
+            margin-right: 0;
+        }
+    }
+}

@@ -2,105 +2,174 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Oxygen&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>BacaKomik</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="build/styles/main.css">
 </head>
-<body> 
-    <div class="fundoo">
-        <header>
-            <div class="containers">
-                <div class="logo">
-                    <img src="./imagens/imagem_2023-05-09_212628198-removebg-preview.png" alt="Imagem da logo BacaKomick">
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="">Comic list</a>
-                        </li>
-                        <li>
-                            <a href="">Genres</a>
-                        </li>
-                        <li>
-                            <a href="">Popular</a>
-                        </li>
-                        <li>
-                            <a href="">Contact us</a>
-                        </li>  
-                    </ul>
-                </nav>
-                <div class="busca">
-                    <button type="submit">    
-                        <img src="./imagens/lupa-removebg-preview.png" id="busca-imagem" alt="Imagem de uma lupa para pesquisa">
-                    </button>    
-                    <input type="text" id="textbusca" placeholder="Search your comic...">
-                </div> 
-            </div>    
-            </header>
-        <section id="home">
-            <div class="containers">
-                <div>
-                    <h2>ADVENTURE; DARK FANTASY; MARTIAL ARTS;</h2>
-                    <h1>Demon Slayer:</h1>
-                    <h1>Kimetsu No Yaiba</h1>
-                </div>
-                <div class="desc">
-                    <p>
-                        Demon Slayer: Kimetsu No Yaiba is a Japanese manga <br>
-                        series written and illustrated by Koyoharu Gotouge. <br>
-                        Who strives to become a demon slayer after his family <br>
-                        was slaughtered and his younger sister Nezuko turned <br>
-                        into a demon.
-                    </p>
-                    <br>
-                    <button class="now">
-                        <strong> Read now </strong>
-                    </button>
-                    <button>
-                        <img src="./imagens/livro.jpg" alt="Imagem de um livro">
-                        <strong> Ch.205 </strong>
-                    </button>
-                </div>    
-            </div>
-        </section>
-        <div class="roda-pe">
-            <img src="./imagens/tanjiro-maior-removebg-preview.png" alt="">
-        </div>
-        <section>
-            <div class="containers">
-                <h1 class="nota">9.5</h1>
-                <div>
-                    <button type="submit" class="avali">
-                        <img src="./imagens/strela-com-cor-removebg-preview.png" alt="">
-                    </button>
-                    <button class="avali">
-                        <img src="./imagens/strela-com-cor-removebg-preview.png" alt="">
-                    </button>
-                    <button class="avali">
-                        <img src="./imagens/strela-com-cor-removebg-preview.png" alt="">
-                    </button>
-                    <button class="avali">
-                        <img src="./imagens/strela-com-cor-removebg-preview.png" alt="">
-                    </button>
-                    <button class="avali-">
-                        <img src="./imagens/strela-com-cor-removebg-preview.png" alt="">
-                    </button>    
-                    <div>
-                        <p>100 Reviews</p>
-                    </div>    
+<body>
+    <header>
+            <div class="container">
+                <div class="row tablet-container">
+                    <div class="desktop-nav-lg">
+                        <div class="tablet-nav">
+                            <div class="col-md-3 col-lg-2 mobile-site">
+                                <img class="logo" src="./build/imagens/imagem_2023-05-09_212628198-removebg-preview.png" alt="">
+                                <nav class="navbar navbar-expand-lg navbar-expand-md">
+                                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-hamburgue">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </nav>
+                            </div>
+                            <div class="col-md-6 col-lg-7">
+                                <div class="navbar navbar-expand-lg navbar-expand-md">
+                                    <div class="collapse navbar-collapse" id="nav-hamburgue">
+                                        <nav>
+                                            <ul class="nav navbar-nav nav-pills">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="">Comic list</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="">Genres</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="">Popular</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-4 pesquisa">
+                            <form>
+                                <input class="form-control" type="text" id="pesquisa">
+                                <button type="button">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+    </header>
+    <div class="img-fundo">
+        <main>
+            <div class="container">
+                <section>
+                    <div class="row primeira-secao">
+                        <div class="col-md-5 titulo-desc">
+                            <h5>Adventure; Dark Fantasy; Martial Arts;</h5>
+                            <h2>Demon Slayer:</h2>
+                            <h1>Kimetsu No Yaiba</h1>
+                        </div>
+                        <div class="col-md-7 desc-info">
+                            <p>
+                                Demon Slayer: Kimetsu No Yaiba is a Japanese manga <br>
+                                series written and illustrated by Koyoharu Gotouge. <br>
+                                Who strives to become a demon slayer after his family <br>
+                                was slaughtered and his younger sister Nezuko turned <br>
+                                into a demon.
+                            </p>
+                            <div class="info-botao">
+                                <button class="now" type="button">
+                                    Read Now
+                                </button>
+                                <button  class="now-bk" type="button">
+                                    <i class="bi bi-book"> Ch.205</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="parte-baixo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1 mb-5 nota-mobile">
+                                <p class="nota-avaliacao">9.7</p>
+                                <div class="avaliacoes-espaco-mobile">
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <p class="num-avaliacao-mobile">100 Reviews</p>
+                                </div>
+                            </div>
+                            <div class="col-md-1 mb-5 mobile-some">
+                                <p class="nota-avaliacao">9.7</p>
+                            </div>
+                            <div class="col-md-2 mb-lg-5 mb-md-5 mobile-some">
+                                <div class="avaliacoes-espaco">
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                    <button type="button" class="avaliacoes">
+                                        <img src="./build/imagens/strela-com-cor-removebg-preview.png" alt="Imagem de uma Estrla de avaliação">
+                                    </button>
+                                </div>
+                                <p class="num-avaliacao">100 Reviews</p>
+                            </div>
+                            <div class="col-md-9 carousel-img">
+                                <div class="container">
+                                    <div class="row">
+                                        <div id="carousel-kimetsu" class="carousel carousel-fade">
+                                            <div class="carousel inner">
+                                                <div class="carousel-item active">
+                                                    <img class="tanjiro1" src="./build/imagens/dlc_chara03-1-removebg-preview.png" alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="nezuko" src="./build/imagens/Nezuko-Carousel.png" alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="tanjiro2" src="./build/imagens/Tanjiro-Carousel.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carousel-kimetsu" class="active" data-bs-slide-to="0"></button>
+                                                <button type="button" data-bs-target="#carousel-kimetsu" data-bs-slide-to="1"></button>
+                                                <button type="button" data-bs-target="#carousel-kimetsu" data-bs-slide-to="2"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
         <footer>
-            &copy;Creditos do Design - Panda Design
+            <p>&copy;Creditos do Design - Panda Design</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
